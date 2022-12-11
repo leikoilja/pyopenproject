@@ -41,7 +41,7 @@ env_down:
 test: pyenv env_up pytest env_down clean_pyenv
 
 build:
-	- python -m pip install --upgrade build
+	# - python -m pip install --upgrade build
 	- python -m build
 
 clean: clean_pyenv
@@ -55,7 +55,7 @@ vars:
 
 help:
 	@echo "    clean"
-	@echo "        Remove all artifacts."	
+	@echo "        Remove all artifacts."
 	@echo '    build'
 	@echo '        Build the project package'
 	@echo '    test'
