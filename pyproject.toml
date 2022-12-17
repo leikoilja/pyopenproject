@@ -1,6 +1,22 @@
+[tool.poetry]
+name = "pyopenproject"
+version = "0.2.0"
+authors = ["Alan Padierna Fernández", "Ilja Leiko"]
+description = ""
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+PyYAML = "^6.0"
+python-dateutil = "^2.8.2"
+isodate = "^0.6.1"
+
+[tool.poetry.group.dev.dependencies]
+coverage = "^6.5.0"
+pytest = "^7.2.0"
+
 [build-system]
-requires = [
-    "setuptools>=42",
-    "wheel"
-]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
